@@ -20,7 +20,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LCTRL_TAB";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt LCTRL TAB>,
                 <&kp TAB>;
@@ -29,7 +28,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LALT_ESC";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt LALT ESCAPE>,
                 <&kp ESC>;
@@ -38,7 +36,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT2_BSPC";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&lt 2 BSPC>,
                 <&kp BSPC>;
@@ -47,7 +44,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LSHFT_SPACE";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt LSHFT SPACE>,
                 <&kp SPACE>;
@@ -56,7 +52,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT1_RET";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&lt 1 RET>,
                 <&kp RET>;
@@ -65,7 +60,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RSHFT_SPACE";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt RSHFT SPACE>,
                 <&kp SPACE>;
@@ -77,8 +71,6 @@
             bindings =
                 <&lt 2 DEL>,
                 <&kp DEL>;
-
-            tapping-term-ms = <130>;
         };
         td_rctrl_sqt: td_rctrl_sqt {
             compatible = "zmk,behavior-tap-dance";
@@ -87,14 +79,11 @@
             bindings =
                 <&mt RCTRL SQT>,
                 <&kp SQT>;
-
-            tapping-term-ms = <130>;
         };
         td_ralt_bslh: td_ralt_bslh {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RALT_BSLH";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt RALT BSLH>,
                 <&kp BSLH>;
@@ -103,7 +92,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RGUI_RBKT";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt RGUI RBKT>,
                 <&kp RBKT>;
@@ -112,7 +100,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LCTRL_K_APP";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt 0 K_APP>,
                 <&kp K_APP>;
@@ -121,7 +108,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RCTRL_MINUS";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt RCTRL MINUS>,
                 <&kp MINUS>;
@@ -130,7 +116,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RGUI_F12";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&mt RGUI F12>,
                 <&kp F12>;
@@ -139,7 +124,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT3_BSPC";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&lt 3 BSPC>,
                 <&kp BSPC>;
@@ -148,7 +132,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT3_RET";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&lt 3 RET>,
                 <&kp RET>;
@@ -157,7 +140,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT3_DEL";
             #binding-cells = <0>;
-            tapping-term-ms = <130>;
             bindings =
                 <&lt 3 DEL>,
                 <&kp DEL>;
