@@ -15,12 +15,12 @@
 #define ADJ 3
 
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <260>;
     tapping-term-ms = <130>;
 };
 
 &lt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <260>;
     tapping-term-ms = <130>;
 };
 
