@@ -19,6 +19,11 @@
     tapping-term-ms = <130>;
 };
 
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <130>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
