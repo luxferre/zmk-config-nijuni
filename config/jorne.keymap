@@ -5,9 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEF 0
 #define LWR 1
@@ -19,155 +19,6 @@
 };
 
 / {
-    behaviors {
-        td_lctrl_tab: td_lctrl_tab {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LCTRL_TAB";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt LCTRL TAB>,
-                <&kp TAB>;
-        };
-        td_lalt_esc: td_lalt_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LALT_ESC";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt LALT ESCAPE>,
-                <&kp ESC>;
-        };
-        td_lt2_bspc: td_lt2_bspc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT2_BSPC";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&lt 2 BSPC>,
-                <&kp BSPC>;
-        };
-        td_lshft_space: td_lshft_space {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LSHFT_SPACE";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt LSHFT SPACE>,
-                <&kp SPACE>;
-        };
-        td_lt1_ret: td_lt1_ret {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT1_RET";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&lt 1 RET>,
-                <&kp RET>;
-        };
-        td_rshft_space: td_rshft_space {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RSHFT_SPACE";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt RSHFT SPACE>,
-                <&kp SPACE>;
-        };
-        td_lt2_del: td_lt2_del {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT2_DEL";
-            #binding-cells = <0>;
-            bindings =
-                <&lt 2 DEL>,
-                <&kp DEL>;
-
-            tapping-term-ms = <130>;
-        };
-        td_rctrl_sqt: td_rctrl_sqt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RCTRL_SQT";
-            #binding-cells = <0>;
-            bindings =
-                <&mt RCTRL SQT>,
-                <&kp SQT>;
-
-            tapping-term-ms = <130>;
-        };
-        td_ralt_bslh: td_ralt_bslh {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RALT_BSLH";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt RALT BSLH>,
-                <&kp BSLH>;
-        };
-        td_rgui_rbkt: td_rgui_rbkt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RGUI_RBKT";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt RGUI RBKT>,
-                <&kp RBKT>;
-        };
-        td_lctrl_k_app: td_lctrl_k_app {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LCTRL_K_APP";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt 0 K_APP>,
-                <&kp K_APP>;
-        };
-        td_rctrl_minus: td_rctrl_minus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RCTRL_MINUS";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt RCTRL MINUS>,
-                <&kp MINUS>;
-        };
-        td_rgui_f12: td_rgui_f12 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RGUI_F12";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&mt RGUI F12>,
-                <&kp F12>;
-        };
-        td_lt3_bspc: td_lt3_bspc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT3_BSPC";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&lt 3 BSPC>,
-                <&kp BSPC>;
-        };
-        td_lt3_ret: td_lt3_ret {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT3_RET";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&lt 3 RET>,
-                <&kp RET>;
-        };
-        td_lt3_del: td_lt3_del {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT3_DEL";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings =
-                <&lt 3 DEL>,
-                <&kp DEL>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -179,10 +30,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp LWIN      &kp GRAVE  &kp Q  &kp W         &kp E            &kp R        &kp T          &kp Y            &kp U        &kp I    &kp O     &kp P       &kp LBKT  &td_rgui_rbkt
-          &td_lctrl_tab  &kp A  &kp S         &kp D            &kp F        &kp G          &kp H            &kp J        &kp K    &kp L  &kp SEMI  &td_rctrl_sqt
-           &td_lalt_esc  &kp Z  &kp X         &kp C            &kp V        &kp B          &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &td_ralt_bslh
-                                       &td_lt2_bspc  &td_lshft_space  &td_lt1_ret    &td_lt1_ret  &td_rshft_space  &td_lt2_del
+&kp LWIN        &kp GRAVE  &kp Q  &kp W              &kp E            &kp R        &kp T            &kp Y            &kp U        &kp I    &kp O     &kp P                 &kp LBKT  &mt RWIN RBKT
+            &mt LCTRL TAB  &kp A  &kp S              &kp D            &kp F        &kp G            &kp H            &kp J        &kp K    &kp L  &kp SEMI            &mt RCTRL SQT
+          &mt LALT ESCAPE  &kp Z  &kp X              &kp C            &kp V        &kp B            &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_ALT BACKSLASH
+                                         &lt RSE BACKSPACE  &mt LSHFT SPACE  &lt LWR RET    &lt LWR ENTER  &mt RSHFT SPACE  &lt RSE DEL
             >;
         };
 
@@ -194,10 +45,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &kp CAPS   &kp SCROLLLOCK       &kp PG_UP  &kp PRINTSCREEN   &kp HOME  &kp EQUAL      &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_NUMLOCK  &td_rgui_f12
-        &td_lctrl_k_app       &kp INSERT  &kp LEFT_ARROW     &kp UP_ARROW  &kp RIGHT  &kp MINUS    &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS  &td_rctrl_minus
-                 &trans  &kp PAUSE_BREAK   &kp PAGE_DOWN   &kp DOWN_ARROW    &kp END   &kp PLUS    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_DOT         &kp RALT
-                                                             &td_lt3_bspc     &trans     &trans             &trans           &trans      &td_lt3_del
+&trans                 &kp CAPS   &kp SCROLLLOCK       &kp PG_UP    &kp PRINTSCREEN   &kp HOME  &kp EQUAL      &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_NUMLOCK  &mt RGUI F12
+        &mt LCTRL K_APPLICATION       &kp INSERT  &kp LEFT_ARROW       &kp UP_ARROW  &kp RIGHT  &kp MINUS    &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS  &mt RCTRL MINUS
+                         &trans  &kp PAUSE_BREAK   &kp PAGE_DOWN     &kp DOWN_ARROW    &kp END   &kp PLUS    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_DOT         &kp RALT
+                                                                  &lt ADJ BACKSPACE     &trans     &trans             &trans           &trans      &lt ADJ DEL
             >;
         };
 
@@ -212,7 +63,7 @@
 &trans  &kp KP_NUM            &kp F1            &kp F2            &kp F3            &kp F4            &kp F5              &kp F6            &kp F7            &kp F8            &kp F9           &kp F10  &kp F11  &mt RGUI F12
          &kp LCTRL  &kp RS(NUMBER_1)  &kp RS(NUMBER_2)  &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(NUMBER_5)    &kp RS(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)   &trans
             &trans      &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0   &trans
-                                                                  &trans            &trans       &td_lt3_ret         &td_lt3_ret            &trans            &trans
+                                                                  &trans            &trans       &lt ADJ RET       &lt ADJ ENTER            &trans            &trans
             >;
         };
 
